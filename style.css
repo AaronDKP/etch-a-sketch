@@ -1,0 +1,26 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+    min-height: 100vh;
+}
+
+#gridContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    width: 90%;
+    height: 90vh;
+    background-color: blue;
+}
+
+.gridDiv {
+    display: flex;
+    flex-grow: 1;
+    width: calc(100% * (1/16) - 10px);
+    height: calc(100% * (1/16) - 10px);
+    margin: 5px;
+    background-color: red;
+}
