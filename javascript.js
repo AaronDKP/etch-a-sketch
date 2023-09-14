@@ -76,8 +76,6 @@ rainbowButton.addEventListener('click', () => {
 
     const rainbowHover = document.querySelectorAll('.rainbowHover');
 
-    //trying to clear opacity once on press of button
-
     for (div of rainbowHover) {
         div.addEventListener('mouseover', function() {
             this.style.transition = '0.01s';
@@ -121,9 +119,3 @@ modernButton.addEventListener('click', () => {
         })
     }
 })
-
-
-  // create button that removes classicHover class from gridDivs
-  // then using eventLIstener adds a mouseover function to show random colour above
-  // make other button for the opacity option
-  // make each colour option button remove the other's features
