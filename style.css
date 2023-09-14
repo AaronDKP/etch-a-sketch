@@ -1,5 +1,6 @@
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 0px;
@@ -7,20 +8,141 @@ body {
     min-height: 100vh;
 }
 
+.logoBanner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 90vh;
+}
+
+#logoImg {
+    margin-top: 20px;
+    width: 90vh;
+}
+
+#resizeContainer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    height: 100px;
+    width: 90vh;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#resizeButton {
+    border: none;
+    background-color: #fff;
+    margin-top: -40px;
+}
+
+#resizeButton:hover {
+    border-bottom: solid;
+}
+
+#resizeButton:active {
+    box-shadow: 0 10px 10px -10px #000;
+}
+
+#rainbowButton {
+    border: none;
+    background-color: #fff;
+    margin-top: -40px;
+}
+
+#rainbowButton:hover {
+    border-bottom: solid;
+}
+
+#rainbowButton:active {
+    box-shadow: 0 10px 10px -10px #000;
+}
+
+#classicButton {
+    border: none;
+    background-color: #fff;
+    margin-top: -40px;
+}
+
+#classicButton:hover {
+    border-bottom: solid;
+}
+
+#classicButton:active {
+    box-shadow: 0 10px 10px -10px #000;
+}
+
+#modernButton {
+    border: none;
+    background-color: #fff;
+    margin-top: -40px;
+}
+
+#modernButton:hover {
+    border-bottom: solid;
+}
+
+#modernButton:active {
+    box-shadow: 0 10px 10px -10px #000;
+}
+
+#resizeImg {
+    padding: 0;
+    height: 150px;
+    margin-bottom: -40px;
+}
+
+#rainbowImg {
+    padding: 0;
+    height: 150px;
+    margin-bottom: -40px;
+}
+
+#classicImg {
+    padding: 0;
+    height: 150px;
+    margin-bottom: -40px;
+}
+
+#modernImg {
+    padding: 0;
+    height: 150px;
+    margin-bottom: -40px;
+}
+
 #gridContainer {
     display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    width: 90%;
+    flex-direction: column;
+    width: 90vh;
     height: 90vh;
-    background-color: blue;
+    background-color: none;
+}
+
+.rowDiv {
+    display: flex;
+    flex: 1;
+    background-color: none;
 }
 
 .gridDiv {
-    display: flex;
-    flex-grow: 1;
-    width: calc(100% * (1/16) - 10px);
-    height: calc(100% * (1/16) - 10px);
-    margin: 5px;
-    background-color: red;
+    flex: 1;
+    margin: 1px;
+    background-color: #f9f1f1;
+    transition: 6s;
+}
+
+.classicHover:hover {
+    background-color: #000;
+    transition: 0.01s;
+}
+
+footer {
+    height: 200px;
+    margin-top: -100px;
+}
+
+#footerImg {
+    width: 300px;
 }
